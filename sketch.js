@@ -16,7 +16,7 @@ function setup() {
 
 	//Create the Bodies Here.
 
-	paper = new Paper(100,500,70);
+	paper = new Paper(100,500,10);
 
 	//dustbin1 = new Dustbin(590,620,10,70);
 	//dustbin2 = new Dustbin(715,620,10,70);
