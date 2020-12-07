@@ -16,13 +16,13 @@ function setup() {
 
 	//Create the Bodies Here.
 
-	paper = new Paper(100,500,10);
+	paper = new Paper(100,520,50,50);
 
 	//dustbin1 = new Dustbin(590,620,10,70);
 	//dustbin2 = new Dustbin(715,620,10,70);
-	dustbin3 = new Dustbin(650,600,140,150);
+	dustbin3 = new Dustbin(650,610,100,100);
 
-	ground = new Ground(400,685,1000,30);
+	ground = new Ground(400,685,1000,60);
  
 	 
 	Engine.run(engine);
@@ -53,7 +53,7 @@ function draw() {
 
 function keyPressed() {
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:60,y:-60});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:125,y:-125});
 	}
 }
 

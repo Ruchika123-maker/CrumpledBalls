@@ -1,7 +1,8 @@
 class Dustbin{
     constructor(x,y,width,height){
       var options = {
-          'isStatic':true
+          'isStatic':true,
+          'density': 5
       }
       this.body = Bodies.rectangle(x, y, width, height, options);
       this.width = width;
@@ -16,6 +17,6 @@ class Dustbin{
         //fill("white");
         //rect(pos.x,pos.y,this.width,this.height);
         imageMode(CENTER);
-        image(this.image,650,600,140,150);
+        image(this.image,650,580,140,150);
     }
 }
